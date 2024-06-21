@@ -1,52 +1,47 @@
-# Proyecto-final-CI5437
+# SAT solver to solve Nonograms
 
-Este proyecto es un solucionador de nonogramas que utiliza una interfaz gráfica para cargar y resolver nonogramas.
+This project is a nonogram solver that uses a graphical interface to load and solve nonograms.
 
-## Requisitos
+## Requirements
 
-Para ejecutar este proyecto necesitas tener instalado Python 3 y las siguientes bibliotecas:
-
+To run this project you need to have Python 3 and the following libraries installed:
 - pysat
 - tkinter
 
-Puedes instalar estas bibliotecas con pip:
+You can install these libraries with pip:
 
 ```
 pip install python-sat
 pip install tk
 ```
 
-## Clonar el Repositorio
+## Clone the Repository
 
-Para obtener una copia del código fuente, puedes clonar el repositorio de GitHub usando git:
-
-```
-git clone git@github.com:dxniela/Proyecto-final-CI5437.git
-```
-
-## Ejecución
-
-Para ejecutar el proyecto, navega hasta el directorio del proyecto y ejecuta el script principal con Python 3:
+To get a copy of the source code, you can clone the GitHub repository using git:
 
 ```
-cd Proyecto-final-CI5437
-python3 main.py
+git clone https://github.com/PanquecaFuriosa/SAT-Solver-for-Nongrams
 ```
 
-Al ejecutarse la interfaz, debes cargar un archivo de prueba, por ejemplo el test6.txt, en el botón _Cargar nonograma_ y luego darle al botón _Resolver nonograma_ para que el programa resuelva el nonograma y muestre el resultado.
+## Execution
 
-## Archivo de entrada
-
-Se utiliza un archivo de texto plano para describir el problema. El archivo contiene un solo objeto con los siguientes campos:
+To run the project, navigate to the project directory and run the main script with Python 3:
 
 ```
-<nro_columnas> <nro_filas>
-<fila_1>
-<fila_2>
+cd SAT-Solver-for-Nongrams
+python main.py
+```
+
+When the interface is executed, you must load a test file, for example test6.txt, in the _Load nonogram_ button and then click the _Solve nonogram_ button for the program to solve the nonogram and display the result.
+
+## Input file
+
+A plain text file is used to describe the problem. The file contains a single object with the following fields:
+
+```
+<no_columns> <no_rows>
+<row_1>
+<row_2>
 ...
-<columna_1>
-<columna_2>
-...
-```
-
-donde cada fila y columna se describe como una lista de números separados por un espacio, que representan la cantidad de casillas consecutivas que deben estar coloreadas en esa fila o columna.
+<column_1>
+<column_2>
